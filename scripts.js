@@ -1,6 +1,12 @@
 let A = document.getElementById("ch");
 let B = document.getElementById("ci");
 let C = document.getElementById("cb");
+let D = document.getElementById("nl-0");
+let E = document.getElementById("nl-1");
+let F = document.getElementById("nl-2");
+let G = document.getElementById("nl-3");
+let H = document.getElementById("nl-4");
+let I = document.getElementById("nl-5");
 
 let headers = [
     "North American Blizzard of 2006",
@@ -12,11 +18,11 @@ let headers = [
 ];
 let images = [
     "img/blizzard.png",
-    "img/",
-    "img/",
-    "img/",
-    "img/",
-    "img/"
+    "img/torino.jpg",
+    "img/libya.png",
+    "img/treaty of paris.JPG",
+    "img/tom and jerry.png",
+    "img/in the mood.jpg"
 ];
 let info = [
     "The North American blizzard of 2006 was a nor'easter that began on the evening of February 11, 2006. It dumped heavy snow across the Mid-Atlantic and New England states, from Virginia to Maine through the early evening of February 12, and ended in Atlantic Canada on February 13. The major cities from Baltimore to Boston received at least a foot of snow, with a second-highest amount of 26.9 inches (68 cm) in New York City, the (at the time) most since at least 1869, the start of record keeping, only broken by the January 2016 United States blizzard nearly 10 years later.",
@@ -31,4 +37,15 @@ function switchText(p){
     A.innerText = headers[p];
     B.src = images[p];
     C.innerText = info[p];
+    D.classList.remove("active");
+    E.classList.remove("active");
+    F.classList.remove("active");
+    G.classList.remove("active");
+    H.classList.remove("active");
+    I.classList.remove("active");
+    document.getElementById("nl-" + p).classList.add("active");
+}
+
+function refresh(){
+    window.location.reload();
 }

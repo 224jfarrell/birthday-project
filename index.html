@@ -12,7 +12,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="" alt="brand">
+            <img src="img/cake.png" alt="brand" onclick="refresh()">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -20,22 +20,22 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" onclick="switchText(0)">2006 North American Blizzard</a>
+                <a class="nav-link active" id="nl-0" aria-current="page" onclick="switchText(0)">2006 North American Blizzard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="switchText(1)">2006 Winter Olympics</a>
+                <a class="nav-link" id="nl-1" onclick="switchText(1)">2006 Winter Olympics</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="switchText(2)">Libya</a>
+                <a class="nav-link" id="nl-2" onclick="switchText(2)">Libya</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="switchText(3)">French-Indian War</a>
+                <a class="nav-link" id="nl-3" onclick="switchText(3)">French-Indian War</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="switchText(4)">"Tom & Jerry"</a>
+                <a class="nav-link" id="nl-4" onclick="switchText(4)">"Tom & Jerry"</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="switchText(5)">"In the Mood"</a>
+                <a class="nav-link" id="nl-5" onclick="switchText(5)">"In the Mood"</a>
               </li>
             </ul>
           </div>
@@ -48,17 +48,23 @@
         </div>
         <div class="col col-4"></div>
     </div>
+    <br>
+    <br>
     <div class="row" id="content-header">
-        <div class="col col-5"></div>
-        <div class="col col-2">
-            <h2 class="content-header text-center" id="ch">Click on a tab in the Navbar to show information!</h2>
-        </div>
-        <div class="col col-5"></div>
+      <div class="col col-3"></div>
+      <div class="col col-6">
+        <h2 class="content-header text-center" id="ch">Click on a tab in the Navbar to show information!</h2>
+      </div>
+      <div class="col col-3"></div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="row" id="content-body">
-        <div class="col col-1"></div>
-        <div class="col col-4">
-            <img src="" alt="Click on a tab in the Navbar to show information!" class="content-img" id="ci">
+      <div class="col col-1"></div>
+      <div class="col col-4">
+        <img src="" alt="Click on a tab in the Navbar to show information!" class="content-img" id="ci">
         </div>
         <div class="col col-2"></div>
         <div class="col col-4">
